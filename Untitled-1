@@ -1,0 +1,115 @@
+<br>
+                Also a button:
+                <button><h1>Large</h1></button>
+<style>
+            #changer{
+                width: 200px;
+                height: 200px;
+                background-color: bisque;
+                
+                transition: 1s all;
+            }
+            .special{
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                background-color: beige;
+            }
+        </style>
+        
+        <script>
+            
+            document.write("<h1>Welcome to Java Script</h1>");
+            console.log("This is going to the console.");
+            var myName = "Antoine";
+            document.write("<h2>My name is " + myName + "</h2>");
+            
+            function sayHello(){
+                console.log("Hello There");
+            }
+            
+            function changeDiv(){
+                document.getElementById("changer").innerHTML = "CHANGED!!";
+                 document.getElementById("changer").style.backgroundColor = "red";
+            }
+            
+            
+            var names = ["Antoine", "Ross", "Elizabeth", "Vincent", "Will"];
+            
+            console.log(names.length);
+            // First, set the starting point
+            // Then, set the maximum (end point)
+            // Then, set what you count by
+            for(var i = 0; i < names.length; i++){
+                console.log(names[i])
+            }
+            
+            var theDivs = document.getElementsByClassName("special");
+            console.log(theDivs);
+            
+            for(var i = 0; i < theDivs.length; i++){
+                console.log("");
+            }
+        </script>
+        
+        <script>
+        
+            $(document).ready(function(){
+                 console.log("Does jQuery work???");             
+            });
+        
+        </script>
+    
+    </head>
+    
+    <body>
+        <button onclick="changeDiv()">Click Here</button>
+        
+        <div id="changer">
+        </div>
+        
+        <button id="changeAll">Change All The Divs</button>
+        
+        <div class="special">
+        </div>
+        
+        <div class="special">
+        </div>
+        
+        <div class="special">
+        </div>
+        
+        <div class="special">
+        </div>
+        
+        <script>
+            var theDivs = document.getElementsByClassName("special");
+            
+            var changed = false;
+            
+            function changeDivs(){
+                for (var i = 0; i < theDivs.length; i++){
+                    console.log(theDivs[i]);
+                    theDivs[i].style.backgroundColor = "red";
+                }
+                changed = true;
+            }
+            
+            function changeBack(){
+                for(var i = 0; i < theDivs.length; i++){
+                    theDivs[i].style.backgroundColor = "bisque";
+                }
+                changed = false;
+            }
+            
+            document.getElementById("changeAll").onclick = function(){
+                if(changed == false){
+                    changeDivs();
+                }else{
+                    changeBack();
+                }
+            }
+            function testFunc(){
+                console.log("Yo Whaddup?")
+            }
+            setTimeout(testFunc, 3000);

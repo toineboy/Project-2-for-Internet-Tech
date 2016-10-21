@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html>
+    
+    <head>
+
+    <title>Learn More About Your Cat With Random Questions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>   
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+        
+    </head>
+        
+    <script>
+
+        $(document).ready(function(){
+
+            $("button").click(function(){
+               $("#part1").slideToggle();
+
+                $("#part2").css("background-color", "yellow");
+                $("#part2").html("<h1>We Hope it has the cutest litte kittens</h1>");
+
+                $("#part3").animate({opacity: 0.5, width: "200px"}, 2000, "easeInElastic");
+                });
+            });
+        </script>
+    <body>
+        
+    <div id="page">
+        <div id="header">
+            <h1><a href="/" id="logoLink">Your Cat!</a></h1>
+        </div>
+            <br><hr>
+        </form>
+            <fieldset>
+                <h1>Learn More About Your Cat With Random Questions</h1>
+                <!-- All of these are inline by default -->
+                 What kind of cat do you have?:
+                <input type="text"><br><br>
+                Where is your cat From:
+                <input type="text">
+                <br><br>
+                Does it like Peas, PB&J, Meatballs, or Smoothies:
+               <input type="text">
+
+                <br><br>
+                Gender Button:
+                Male<input type="radio" name="gender">
+                Female<input type="radio" name="gender">
+                Other<input type="radio" name="gender">
+
+                <br>
+                <br>
+                <!-- "type" defines the type of input, "value" defines the text displayed -->
+                Button:
+                <input type="button" id="question1" value="Click Here if it likes The Aristocats">
+                
+                <img id="aristocats" src="images/imgres.jpg">
+                <br>
+                <input type="button" id="question2" value="Click Here if it likes Garfield">
+                
+                <img id="garfield" src="images/imgres.png">
+                <br>
+                <input type="button" id="question3" value="Click Here if it likes Cat in the Hat">
+                
+                <img id="catinthehat" src="images/images-2.jpg">
+                
+        <script>       
+         $(document).ready(function(){
+             $("button").click(function(){
+               $("#question 1").slideToggle();
+               
+                });
+            });
+            
+        </script> 
+
+            <h1>Does your cat take long naps?</h1> 
+                yes<input type="radio" name="option">
+                no<input type="radio" name="option">
+                
+                
+                
+            <h2>Does it climb your walls?</h2>
+                yes<input type="radio" name="option">
+                no<input type="radio" name="option">
+                
+                
+                
+            <h3>Can your cat eat peanut butter?</h3>
+                yes<input type="radio" name="option">
+                no<input type="radio" name="option">
+                
+                
+
+            <br>
+            <br>
+            <br>
+
+            <div id="part1" class="question">
+                Your cat seems Amazing
+            </div>
+
+            <div id="part2" class="question">
+                Your cat must be the nicest cat in the world
+            </div>
+
+            <div id="part3" class="question">
+                Does It have babies?
+            </div>
+                
+            <button>Click Here</button>
+
+                <br>
+                <br>
+                Check if your cat likes to cuddle with you:
+                <input type="checkbox">
+                
+                <iframe src="//giphy.com/embed/d01GIDoRyaK6A" width="480" height="327" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/cat-hug-human-d01GIDoRyaK6A"></a></p>
+
+                <form action="javascript:submitForm()")
+                      
+                    <h1>Simple Info:</h1>
+                    <p>Please enter its personal information in the form below.</p>
+
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name">
+                    <hr>   
+                    What is your cats favorite color
+                    <input type="color" name="favorColor">
+                    <hr>
+                    What is your cats birthday?
+                    <input type="text" birthday="Cat's Birthday" placeholder="Cat's Birthday">
+                    <hr>
+                    <input type="submit">
+                    <hr>
+        </fieldset>
+
+    </body>
+    
+</html>
