@@ -1,5 +1,21 @@
-.aristocat{
+#aristocat{
+  background-image: url(images/imgres.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+}
+#portrait{
     display: none;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    background-image: url(images/imgres.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .question{
             width: 100%;
@@ -27,6 +43,7 @@ a{
 
 body{
     font-family: arial; font-size: 80%;  width: 100%; margin: 0;
+
 }
 
 #page{ margin: 20px; }
